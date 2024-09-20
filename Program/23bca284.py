@@ -38,7 +38,7 @@ with open('D:/23BCA284/sqlite3/csv/player.csv','w') as f:
     w=csv.writer(f)
     w.writerows(players)  
 # read
-with open('D:/23BCA284/sqlite3/csv/player.csv','r') as f:
+with open("D:/23BCA284/sqlite3/csv/player.csv","r","newline=''") as f:
     r=csv.reader(f)
     for row in r:
         print(row)
